@@ -9,17 +9,23 @@
         transition="scale-transition"
         width="40"
       />
-      <v-toolbar-title class="hidden-sm-and-down font-weight-black font-italic">
-  DewyHive
-</v-toolbar-title>
-
-      <v-spacer></v-spacer>
+      
+      
+      <v-toolbar-title class="hidden-sm-and-down font-weight-black font-italic" style="display: flex; align-items: center;">
+        DewyHive
+        
+        
+      </v-toolbar-title>
+      <v-spacer style="flex-grow: 1;"></v-spacer> 
+      <v-text-field hide-details single-line placeholder="  Search..." style="margin-right: 20px; margin-left: 40px;"></v-text-field>
+        <v-btn icon><v-icon>mdi-magnify</v-icon></v-btn>
     </v-app-bar>
 
     <v-main>
       <router-view />
     </v-main>
   </v-app>
+  
 </template>
 
 <script>
