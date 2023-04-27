@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Login from '../views/Login.vue'
 import SkinsenseCollection from '../views/SkinsenseCollection.vue'
+import MyCart from '../views/MyCart.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/skinsenseCollection', 
     name: 'SkinsenseCollection',
     component: SkinsenseCollection
+  },
+  {
+    path: '/MyCart', 
+    name: 'MyCart',
+    component: MyCart
   },
   {
     path: '/about',
